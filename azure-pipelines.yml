@@ -24,7 +24,7 @@ steps:
 - task: UseDotNet@2
   inputs:
     packageType: 'runtime'
-    version: '.Net10.x.x'
+    version: '.Net10.0.201'
 
 - task: DotNetCoreCLI@2
   inputs:
