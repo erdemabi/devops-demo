@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: erdem-mac
+  name: Default
   
 
 steps:
