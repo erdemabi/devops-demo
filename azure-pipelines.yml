@@ -49,6 +49,6 @@ steps:
     azureSubscription: 'SC-Azure-Erdem-test'
     appType: 'webApp'
     WebAppName: 'erdemabi'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     enableCustomDeployment: true
     DeploymentType: 'zipDeploy'
