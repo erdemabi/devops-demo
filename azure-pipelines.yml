@@ -3,7 +3,7 @@ trigger:
 - main 
 
 pool:
-  name: Default
+  vmImage: 'ubuntu-latest'
  
 steps:
 # .NET 10 SDK kurulumu (Runtime yerine SDK seçilmeli)
