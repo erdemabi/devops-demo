@@ -1,11 +1,18 @@
 trigger:
+
 - main 
 
 pool:
   name: Default
-
+ 
 steps:
 # .NET 10 SDK kurulumu (Runtime yerine SDK seçilmeli)
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: 'SC-Azure-Erdem-test'
+    KeyVaultName: 'k8smonitoringvault'
+    SecretsFilter: '*'
+    RunAsPreJob: false
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
